@@ -3,6 +3,10 @@ Userscript to make screenshot of the web page and save as an image and optionall
 
 To install this script you need browser addon such as [**Tampermonkey**](https://www.tampermonkey.net/)
 
+## Showcase
+
+<video controls src="example_showcase.mp4" width="1920" height="1094" />
+
 ## Technology
 This is based on [**Media Recorder API**](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder) and [`getDisplayMedia()`](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia) support in your browser ([1](https://caniuse.com/mediarecorder), [2](https://caniuse.com/mdn-api_mediadevices_getdisplaymedia_prefercurrenttab_option) and [3](https://caniuse.com/mdn-api_mediadevices_getdisplaymedia_selfbrowsersurface_option)). Although it currently works in Chromium-based browsers (Chrome, Edge, Brave, etc.), Firefox, Safari, Opera, only in Chromium-based it is fully utilized and convenient to use. In Firefox/Safari/Opera you would need to find your tab from a list of Tabs, Windows and Monitors which may not be convenient *(because it display them all and with a lot of tabs it will take some time to find your tab)*, it still will work if you select correct tab. When in the future they implement missing API, using it will be more convenient.
 
