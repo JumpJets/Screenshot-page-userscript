@@ -5,11 +5,7 @@ To install this script you need browser addon such as [**Tampermonkey**](https:/
 
 ## Showcase
 
-![Example showcase](example_showcase.mp4)
-
-<video controls width="1920" height="1096">
-	<source src="example_showcase.mp4" type="video/mp4" />
-</video>
+![Example showcase](example_showcase.avif)
 
 
 ## Technology
