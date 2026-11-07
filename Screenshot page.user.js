@@ -413,7 +413,8 @@
 			original_scroll_behavior = root.style.scrollBehavior,
 			original_scrollbar_color = root.style.scrollbarColor,
 			original_scrollbar_width = root.style.scrollbarWidth,
-			original_pointer_events = root.style.pointerEvents;
+			original_pointer_events = root.style.pointerEvents,
+			original_cursor = root.style.cursor;
 
 		try {
 			if (!navigator.mediaDevices?.getDisplayMedia) {
@@ -444,6 +445,7 @@
 			root.style.scrollbarColor = "transparent transparent";
 			root.style.scrollbarWidth = "none";
 			root.style.pointerEvents = "none";
+			root.style.cursor = "none";
 
 			window.scrollTo(0, 0);
 			await wait_for_paint();
@@ -612,6 +614,7 @@
 			root.style.scrollbarColor = original_scrollbar_color;
 			root.style.scrollbarWidth = original_scrollbar_width;
 			root.style.pointerEvents = original_pointer_events;
+			root.style.cursor = original_cursor;
 			window.scrollTo(0, original_scroll_y);
 		}
 	};
